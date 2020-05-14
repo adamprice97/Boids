@@ -2,6 +2,7 @@ from Boid import *
 from random import randint
 import random
 import numpy as np
+from itertools import repeat
 from sklearn.cluster import DBSCAN
 
 class World(object):
