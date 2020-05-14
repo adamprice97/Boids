@@ -2,7 +2,7 @@ from Boid import *
 from random import randint
 import random
 import numpy as np
-from sklearn.cluster import DBSCANS
+from sklearn.cluster import DBSCAN
 
 class World(object):
 
