@@ -63,7 +63,8 @@ def on_draw():
     cl = world.getColourBatch()
     for i in range(0, len(vl)):
         batch.add(3, pyglet.gl.GL_TRIANGLES, None, ('v2f', (vl[i][0], vl[i][1], vl[i][2], vl[i][3], vl[i][4], vl[i][5])), ('c3B', (cl[i][0], cl[i][1], cl[i][2], cl[i][0], cl[i][1], cl[i][2], cl[i][0], cl[i][1], cl[i][2])))
-
+    
+    batch.draw()
 
 @window.event
 def on_key_press(symbol, modifiers):
